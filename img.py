@@ -1,15 +1,19 @@
 """
 這是mykirito飯製的本地端試手版
+這裡是類別庫
 作者:喵八
 目前功能:
+創建新角色
+行動
+升級
 """
+
+#匯入函式庫區
 import time
 import random
 import os
-import json
 
-print("歡迎來到mykirito的飯製版本，基本的玩法我想你都記得，不過目前只有文字請見諒")
-
+#類別庫
 class Player():
 	def get_level_list(self):
 		f=open("level.txt","r",encoding="utf-8")
@@ -45,18 +49,4 @@ class Player():
 		for i in self.level_list:
 			if self.exp > i[1]:
 				self.level=i[0]
-		
-id=input("登入id:")
-
-player=Player(id)
-print("成功登入:%s"%player.id)
-print("目前經驗:%d"%player.exp)
-print("目前等級%d"%player.level)
-player.act()
-player.act()
-player.act()
-player.act()
-player.act()
-player.level_up()
-print("目前等級%d"%player.level)
-print("目前經驗:%d"%player.exp)
+				break
