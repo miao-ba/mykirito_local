@@ -29,6 +29,8 @@ This MyKiritio fan made works
 
 讓初學者也能讀懂
 
+並在此基礎上修改乃至擴增
+
 增加投入開發艾恩格朗特的人員
 
 ps:我需要一個幫我寫readme的，我真的不會說話，會的私我罷託
